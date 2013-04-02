@@ -5,9 +5,9 @@ When deploying Drupal websites from development or modifying existing Drupal ins
 
     SET @old = 'dev.example.com', @new = 'www.example.com';
     
-    UPDATE `field_data_body`    SET `body_value` = REPLACE(`body_value`, @old, @new);
-    UPDATE `field_data_body`    SET `body_summary` = REPLACE(`body_summary`, @old, @new);
-    UPDATE `field_revision_body`    SET `body_value` = REPLACE(`body_value`, @old, @new);
+    UPDATE `field_data_body`     SET `body_value`   = REPLACE(`body_value`,   @old, @new);
+    UPDATE `field_data_body`     SET `body_summary` = REPLACE(`body_summary`, @old, @new);
+    UPDATE `field_revision_body` SET `body_value`   = REPLACE(`body_value`,   @old, @new);
 
 ## What might be better
 It may be better to simply make the paths relative by setting the variables thusly:
